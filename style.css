@@ -1,0 +1,932 @@
+/* Définition des polices personnalisées */
+
+
+
+/*********** Eléments principaux de la page **************/
+
+body
+{
+	/*background: url('images/fond_jaune.png'); */
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	color: #181818;
+}
+
+#bloc_page
+{
+	width: 100%;
+	margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+	font-family: Dayrom, serif;
+	font-weight: normal;
+	/*text-transform: uppercase;*/
+}
+
+/*************************************************** 
+		A.  HEADER
+****************************************************/
+header
+{
+	background:#e6eecc repeat;  
+	width: 100%;	
+	
+}
+
+#titre_principal
+{
+	display: inline-block;	
+	background:#e6eecc repeat; 
+	color:black; /*color: green; */
+	margin-left: 20px;
+}
+
+header h1
+{
+	font-family: 'BallparkWeiner', serif;
+	font-size: 2.5em;
+	font-weight: normal;
+}
+
+#logo, header h1
+{
+	display: inline-block;
+	margin-bottom: 0px;
+}
+
+header h2
+{
+	font-family: Dayrom, serif;
+	font-size: 1.1em;
+	margin-top: 0px;
+	font-weight: normal;
+}
+
+/*
+		A.1	Bannière
+*/
+
+#banniere_image
+{
+	margin-top: 0px; /*15 px*/
+	height: 200px;
+	width: 100%;
+	border-radius: 5px;
+	background: #e6eecc  no-repeat; 
+	position: relative;
+	box-shadow: 0px 4px 4px #1c1a19;
+	margin-bottom: 25px;
+}
+
+#banniere_description
+{
+	position: absolute;
+	bottom: 0;
+	border-radius: 0px 0px 5px 5px;
+	width: 99.5%;
+	height: 33px;
+	padding-top: 15px;
+	padding-left: 4px;
+	background-color: rgb(24,24,24); /* Pour les anciens navigateurs*/
+	background-color: teal; /*rgba(24,24,24,0.8);*/
+	color: white;
+	font-size: 1.2em;
+	word-wrap: scroll; /* break-word */
+}
+
+#banniere_description h2, a {
+	display: inline-block;
+}
+
+/*
+		A.2	Boutons
+*/
+.bouton_rouge
+{
+	display: inline-block;
+	height: 25px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	/*background: url('images/fond_degraderouge.png') repeat-x;*/
+	border: 1px solid #760001;
+	border-radius: 5px;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 3px 8px 0px 8px;
+	color: white;
+	text-decoration: none;
+}
+
+.bouton_rouge img
+{
+	border: 0;
+}
+
+
+/********************************************
+		B.		Navigation
+********************************************/
+
+nav
+{
+	float: left;
+	width: 25%;
+	text-align: left;/* right*/
+	background-color: #00AA55; /*silver   #706b64;*/
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 1px;
+	color: white;
+	font-size: 0.8em;
+	word-wrap: auto;
+}
+
+nav ul
+{
+	list-style-type: none;
+}
+
+nav li
+{
+	display: block; /* inline-block */
+	margin-right: 5px;
+	padding-bottom: 5px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+
+/*****************************************************
+	C.		Corps
+******************************************************/
+
+section
+{
+	float: left;
+	width:70%;
+	margin: 0px;
+}
+
+article, aside
+{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left; /* justify*/
+}
+
+article
+{	
+	vertical-align: top;
+	width: 60%;	
+	margin: 5px;/*margin-right: 5px;*/
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+article p
+{
+	font-size: 0.8em;
+}
+
+nav, section
+{
+	display: inline-block;
+}
+
+.ico_categorie
+{
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+aside
+{
+	/*position: relative;*/
+	float: right;
+	width: 30%;
+	background-color: #F9F7ED; /*#706b64*/
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	color: blue;  /* white */
+	font-size: 0.9em;
+	word-wrap: auto;
+}
+
+aside img
+{
+	margin-right: 5px;
+}
+
+#fleche_bulle
+{
+	position: absolute;
+	top: 100px;
+	left: -12px;
+}
+
+#photo_zamble
+{
+	text-align: center;
+}
+
+#photo_zamble img
+{
+	border: 1px solid #181818;
+}
+
+
+/***********************************************
+	D.		Footer 
+************************************************/
+
+footer
+{
+	/*background: url('images/ico_top.png') no-repeat top center,
+	url('images/separateur.png') repeat-x top, url('images/ombre.png')
+	repeat-x top;*/
+	padding-top: 25px;
+	float:bottom;
+	width:100%;
+	display: inline-block;
+}
+
+footer p, footer ul
+{
+	font-size: 0.8em;
+}
+
+footer h1
+{
+	font-size: 1.1em;
+}
+
+#mes_travaux, #mes_photos, #mes_amis
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#mes_travaux
+{
+	width: 28%;
+	word-wrap: auto;
+}
+
+#mes_photos
+{
+	width: 35%;
+	word-wrap: auto;
+}
+
+#mes_amis
+{
+	width: 31%;
+	word-wrap: auto;
+}
+
+#mes_photos img
+{
+	border: 1px solid #181818;
+	margin-right: 2px;
+}
+
+#mes_amis ul
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	width: 48%;
+	list-style-image: url('images/ico_liensexterne.png');
+	padding-left: 2px;
+}
+
+#mes_amis a
+{
+	text-decoration: none;
+	color: #760001;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+	Mes définitions passées (compatibilité des pages)
+	
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.container {
+   height: 100%;
+   min-height: 100%;  /* 100% */
+}
+
+#dtlogo, #upshow {
+	display: inline-block;
+}
+
+#dtlogo {
+	width:25%;
+	height:100%;		
+	margin: 10px auto 0px auto;   
+	vertical-align:center;
+	float:left;	
+}
+
+#upshow {
+	float:left;
+	width:75%;
+	height:100%;
+	vertical-align:center;
+	text-align:center;
+	background:f0e7d7;/*# */
+}
+
+#upmenu{
+	height:30%;
+	font-size: 1.0em;
+}
+
+
+#upadv{
+	height:70%;
+	/*font-size: 2.0em; */
+	font: bold 2.5em Arial, Helvetica;
+	color: teal; /* orange */
+	background:f0e7d7;/*# */
+}
+
+.menu, .content, .adv {
+   padding: 5px 5px 5px 5px;
+}
+
+.menu h1 {
+   font-size: 1.5em; /* Ideal: 24px */
+}
+
+.menu li {
+   list-style: none;
+}
+
+.menu li a {
+   color: #FFFFFF;
+}
+
+.menu li a:before {
+   /* content: "> "; */
+}
+
+.menu li a:hover {
+   color: #000000;
+}
+
+.content .content-item {
+   border-top: 1px solid #36393D;
+   clear: both;
+   margin: 0px auto 0px auto;
+   padding: 15px 0px 15px 0px;
+   text-align: center;
+   width: 90.939597315436241610738255033557%; /* Ideal: 542px -> 542 / 596 */
+}
+
+.content .content-item:first-child {
+   border: 0px solid transparent;
+}
+
+.content .content-item h1 {
+   font-size: 1.5em; /* Ideal: 24px */
+}
+
+.content .content-item p.description {
+   font-size: 0.750em; /* Ideal: 12px */
+   font-style: italic;
+}
+
+.content .content-item div.article {
+   text-align: justify;
+}
+
+.content .content-item img.article-image {
+   float: left;
+   padding: 0px 25px 25px 0px;
+   width: 16.107382550335570469798657718121%; /* Ideal: 96px -> 96 / 596 */
+}
+
+.adv .adv-item {
+   border-top: 1px solid #36393D;
+   margin: 0px auto 0px auto;
+   padding: 15px 0px 15px 0px;
+   text-align: center;
+   width: 85.046728971962616822429906542056%; /* Ideal: 182px -> 182 / 214 */
+}
+
+.adv .adv-item:first-child {
+   border: 0px solid transparent;
+}
+
+.adv .adv-item a {
+   color: #000000;
+   font-style: italic;
+}
+
+.menu .selectmenu select{
+		width: 70%;
+}
+.menu .selectmenu select, .menu .selectmenu input{
+		display: inline-block;
+}
+
+.roundborder {
+	float:left;
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #dddddd;
+    width:300px;/*  300 */
+    border-radius: 25px;
+}
+
+#portail
+{
+	width: 960px;
+	height:500px;
+}
+.retrait{
+	width:90%;
+	padding: 0 10px 0 40px;
+}
+.backgray{
+		/*width:100%;*/
+		height:auto;
+		background-color:#e5e4e2;/*teal */
+		color:#ffffff;
+		/*text-transform: uppercase;*/
+        font: bold 0.9em Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+		text-align:center;
+		text-align:center;
+		padding: 10px 0px;
+}
+.backgreen{
+		/*width:100%;*/
+		height:auto;
+		background-color:teal;
+		color:#ffffff;
+		/*text-transform: uppercase;*/
+        font: bold 1.5em Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+		text-align:center;
+		padding: 10px 0px;
+}
+
+.backblue{
+		/*width:100%;*/
+		height:auto;
+		background-image:linear-gradient(top, #729EBF 0%, #333A40 100%);
+		background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+		background-image:-moz-linear-gradient(top, #729EBF 0%, #333A40 100%);
+		background-image:-ms-linear-gradient(top, #729EBF 0%, #333A40 100%);
+		background-image:-o-linear-gradient(top, #729EBF 0%, #333A40 100%);
+		color:#ffffff;
+		/*text-transform: uppercase;*/
+        font: bold 0.9em Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+		text-align:center;
+		text-align:center;
+		padding: 10px 0px;
+		
+
+}
+
+
+.box_login{
+		width:80%;
+		height:auto;
+		background-color:#d3d3d3;/* white deepsky blue d3d3d3#ebfafa  #aaccff silver #c0c0c0 #d3d3d3*/
+		color:blue;
+        font: normal 0.8em Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+		text-align:center;
+		padding: 10px 0px;
+		border-radius: 25px;
+
+}
+
+#box_sign{
+		width:100%;
+		height:auto;
+		background-color:#6843a0;/* #c0c0c0 #d3d3d3*/
+		color:white; /* black  */
+        font: normal 1.5em Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+		text-align:left;
+		padding: 10px 0px;	
+		margin-left:20px;
+	/*	border: 2px solid #1f45fc;			
+		border-radius: 25px;*/
+
+}
+
+#box_eval{
+		width:90%;
+		height:auto;
+		background-color:#6843a0;/* #c0c0c0 #d3d3d3*/
+		color:white; /* black  */
+        font: normal 0.9em Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+		text-align:center;
+		padding: 10px 0px;	
+		margin-left:20px;
+	/*	border: 2px solid #1f45fc;			
+		border-radius: 25px;*/
+
+}
+
+
+#pub_formation{
+		width:90%;
+		height:auto;
+		background-color:#fff5ee;/*e238ec  ffffff deepskyblue sf0f8ff  #aaccff silver #c0c0c0 #d3d3d3*/
+		color:#000000; /* black  */
+        font: normal 0.9em Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+		text-align:center;
+		text-align:center;
+		padding: 10px 0px;	
+	/*	border: 2px solid #1f45fc;			
+		border-radius: 25px;*/
+
+}
+
+/* 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+*/
+
+/* barre de navigation de crete */
+
+#navbar_ex1 ul {
+    /* margin-left: 0; 
+	padding-left: 0; */
+	 /*background: #f0e7d7; Zamble*/
+	margin: 0 auto;
+	padding: 10px 0 20px 0; /* 1em 0 0 0 */
+}
+
+#navbar_ex1 li {
+    display: inline;
+    list-style-type: none;
+}
+
+#navbar_ex1 a {
+    padding: 3px 10px;
+}
+
+#navbar_ex1 a:link, #navbar_ex1 a:visited {
+		background: grey;
+	/*
+       background-image: linear-gradient(#729EBF, #333A40);
+		background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%); /*#003366 */
+      /*  background-image: -webkit-gradient(linear, left top, left bottom, from(#729EBF), to(#333A40)); 
+        background-image: -ms-linear-gradient(#729EBF, #333A40);
+        background-image: -moz-linear-gradient(#729EBF 0%, #333A40 100%);
+        background-image: -o-linear-gradient(#729EBF, #333A40);  */
+	   
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#navbar_ex1 a:hover {
+    background-color: #F2462E; /*#FFFFFF #336699 */
+    color: yellow;/*#000000 #FFFFFF */
+    text-decoration: none;
+}
+
+
+.roundbdr {
+	float:top left;
+   /* border: 2px solid #a1a1a1;*/
+    padding: 10px 10px; 
+    background: #dddddd;   /*#dddddd */
+    /*width: 80%;*/
+    border-radius: 10px;
+}
+
+/*********************************************
+	menus trois niveaux
+	
+*********************************************/
+
+#monmenu {
+	font-family: trebuchet ms, arial, tahoma, verdana, sans-serif; 
+	font-size: 1.0em; 
+	font-weight:bold;
+	text-align: center;
+}
+
+#monmenu ul ul {
+	display: none; 
+	left: 150px; 
+	top: -1px; 
+	position: absolute; 
+	margin:0px; 
+	padding: 0 4px 4px 4px;
+	border: 1px solid #B0B0B0;
+}
+
+/**/
+#monmenu ul li {
+	list-style-type: none; 
+	position: relative; /* */
+	width: 150px; 
+	padding-top:10px;
+	padding-bottom:10px;
+	/*height:50px;*/
+	
+	background-color:silver; /*lavender #f7f2ea #f0e7d7 #04acec #dcdcdc #729EBF */
+	color:#777;/* marroon */
+	/*background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+	background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);*/
+	border-radius: 6px;
+	margin-bottom:10px;
+	box-shadow: 3px 3px 3px #999;
+	border:solid 1px #333A40;
+}
+
+/*
+#monmenu ul li {
+	list-style-type: none; 
+	position: relative; 
+	width: 150px; 
+	height:40px;
+	background-color:#E0E0E0;*/
+	/*background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);  
+	padding-top:5px;
+	padding-bottom: 5px; 2  
+	margin: 0 0 4px 0;
+	
+}
+*/
+
+#monmenu li:hover, 
+#monmenu li.sfhover {
+	background-color: #ffffff;/*dcdcdc FFFF70 */
+	color:darkblue;
+}
+
+#monmenu li a {
+	text-decoration:none;
+}
+
+#monmenu li:hover ul.niveau2, 
+#monmenu li li:hover ul.niveau3, 
+#monmenu li li:hover ul.niveau4, 
+#monmenu li.sfhover ul.niveau2, 
+#monmenu li li.sfhover ul.niveau3,
+#monmenu li li:hover ul.niveau4 {
+	display: block;/* */
+}
+
+#monmenu li.plus {
+	background-position:right; 
+	background-image: url(illustrations/ fdroite.gif); 
+	background-repeat: no-repeat; 
+	border-bottom: 1px solid #B0B0B0;
+}
+
+/*
+Nos icônes et images indépendants de la résolution
+Iintéressons-nous aux images que nous utilisons (nous utilisons la propriété CSS « background-image »).
+Les écrans dits « rétina » font leur apparition (surtout sur les tablettes). Cela veut dire que la densité de pixels (le dpi) change. Autrement dit, un pixel correspond parfois... à deux/trois pixels physiques ! Ce qui implique qu'une image avec un dpi normal sera affichée de manière plus petite sur un écran « rétina ». Nous avons deux techniques pour nous sortir de là.
+Soit en utilisant les « Media Queries » qui, en fonction du dpi, utiliseront la meilleure image :
+*/
+
+a.icon {
+    background-image:url(images/icon.png);
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+				Media queries
+	
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        
+    a.icon {
+        background-image:url(images/icon@2x.png);
+    }
+}
+
+/*
+
+*/
+
+@media screen and (max-width: 1024px) {
+   #bloc_page {
+      width: 95%;
+   }
+   
+   #upadv{
+	   font-size: 3.0em;
+   }
+}
+
+@media screen and (max-width: 960px) {
+	 /*#leftpan */
+	nav {
+		display: block;
+		height: auto;
+		min-height: auto;
+		vertical-align: top;
+		width: 100%;
+   }
+   
+   
+    /*#headpan,  #leftpan */
+	header, nav{
+		display: table;
+   } 
+   
+	
+	section {
+		width:100%;
+	}
+	
+   /* #centralpan */
+   article {
+		width: 70%; /*79.1015625%; */
+   }
+   
+   /* #rightpan */
+	aside {
+      width: 20%; /*20,8984375%;*/
+   }
+   
+   /* #centralpan,  #rightpan */
+	article, aside{
+      display: inline-block;
+   } 
+	
+   .menu li {
+      display: inline-block;
+      margin-right: 2.6041666666666666666666666666667%; /* Ideal: 25px -> 25 / 960 */
+   }
+}
+
+@media screen and (max-width: 760px) {
+   #bloc_page {
+      margin: 0px 0px 0px 0px;
+      width: 100%;
+   }
+      
+   #banniere_description {
+	height: 66px;
+}
+      
+   #banniere_description h2, .bouton_rouge {
+	display: block	;
+}
+
+
+}
+
+@media screen and (max-width: 640px) {   
+	#dtlogo{		
+      width: 100%;
+	}
+	#upshow{		
+      width: 100%;
+	}
+	
+   /* #centralpan */
+   article {
+      height: auto;
+      min-height: auto;
+      width: 100%;
+   }
+   
+   /* #rightpan */
+   aside {
+      height: auto;
+      min-height: auto;
+      vertical-align: top;
+      width: 95%;
+   }
+   aside, article {
+      display: block;
+   }
+   
+   .bouton_rouge, #banniere_description h2  {
+	display: block;
+}
+   .adv {
+      text-align: center;
+   }
+   
+   .adv .adv-item {
+      display: inline-block;
+   }
+}
+
+@media screen and (min-width: 421px) {
+   .menu .selectmenu {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 420px) {
+   .menu ul {
+      display: none;
+   }
+   
+   .menu select {
+      display: inherit;
+      width: 96%;
+   }
+   
+   /*#rightpan*/
+	aside {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .content .content-item img.article-image {
+      display: none;
+   }
+}
+
+/*******************************************************************************
+
+	Compatibilités avec Internet Explorer 6,7 et 8
+	
+********************************************************************************/
+
+/*******************************************************************************
+ * Hack IE6 CSS
+ *******************************************************************************/
+.content .content-item {
+   _border-top: expression(this.previousSibling == null ? "0px solid transparent" : "1px solid #36393D");
+}
+
+.adv .adv-item {
+   _border-top: expression(this.previousSibling == null ? "0px solid transparent" : "1px solid #36393D");
+}
+
+/**********************************************************************
+ *    Hack IE6-7 CSS
+ *********************************************************************/
+#bloc_page {
+   *clear: both;
+}
+
+/*#leftpan, #centralpan, #rightpan */
+nav, section {
+   *display: block;
+   *float: left;
+}
+
+@media screen and (max-width: 960px) {
+  /* #leftpan */
+  nav {
+      *float: none;
+   }
+
+   .menu li {
+      *display: block;
+      *float: left;
+   }
+}
+
+@media screen and (max-width: 640px) {
+  /* #rightpan */
+   aside {
+      *float: none;
+   }
+   
+   /*#centralpan */
+   article {
+      *float: none;
+      *width: 100%;
+   }
+}
